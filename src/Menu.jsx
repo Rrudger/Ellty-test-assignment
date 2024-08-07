@@ -33,7 +33,7 @@ const Menu = () => {
         />
       )}
       <hr />
-      <Row className='px-2 d-flex justify-content-center'>
+      <Row className='px-2 mb-2 d-flex justify-content-center'>
         <Button variant='warning' className='custom-button'>
           Done
         </Button>
