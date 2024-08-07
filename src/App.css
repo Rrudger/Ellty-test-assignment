@@ -1,0 +1,27 @@
+.menu {
+  width: 370px;
+}
+
+.menu-row {
+  text-align: justify;
+  margin-top: 17px !important;
+}
+
+.custom-button {
+  width: 340px;
+  height: 40px;
+  letter-spacing: -1px;
+}
+
+.form-check-input {
+  width: 22px !important;
+  height: 22px !important;
+}
+
+body {
+  font-family: 'Montserrat' !important;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.2px;
+  letter-spacing: -1px;
+};
