@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Button,
   Container,
@@ -9,10 +9,19 @@ import {
 const Menu = () => {
   const pages = [1,2,3,4,5,6];
 
+  const handleCheckAll = () => {
+    const newVal = document.getElementById('all_pages').checked === true ? true : false;
+    const checkBoxes = document.getElementsByClassName('form-check-input');
+    for (let item of checkBoxes) {
+      item.checked = newVal;
+    }
+  };
+
   return (
     <Container className='my-4 pb-3 shadow rounded menu'>
       <Form.Check
         reverse
+        onChange={handleCheckAll}
         className="menu-row mx-2 pt-3 d-flex align-items-center justify-content-between flex-row-reverse"
         label="All pages"
         name="all pages"
